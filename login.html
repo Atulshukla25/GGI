@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9; /* Light background color */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  
+      form {
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff; /* White background color */
+        padding: 30px;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      }
+  
+      label {
+        display: block;
+        margin-top: 20px;
+        color: #333; /* Label text color */
+      }
+  
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        box-sizing: border-box;
+        transition: border-color 0.3s; /* Smooth transition */
+      }
+  
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        border-color: #007bff; /* Border color on focus */
+        outline: none;
+      }
+  
+      button {
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        padding: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition */
+      }
+  
+      button:hover {
+        background-color: #0056b3; /* Darker background color on hover */
+      }
+  
+      a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #007bff; /* Link color */
+        text-decoration: none; /* Remove underline */
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="login.php">
+      <label for="username">Email:</label>
+      <input type="email" name="username" />
+      
+      <label for="password">Password:</label>
+      <input type="password" name="password" />
+      
+      <button type="submit">Login</button>
+      <br><br><a href="registeration.html">Not Registered? Register Here.</a>
+    </form>
+
+  </body>
+</html>
